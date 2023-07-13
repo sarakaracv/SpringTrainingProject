@@ -1,6 +1,7 @@
 package com.cydeo.aspect;
 
 import com.cydeo.dto.CourseDTO;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @Aspect
 @Component
+//@Slf4j instead of Logger logger part we can use it
 public class LoggingAspect {
 
     Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
